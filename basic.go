@@ -212,7 +212,8 @@ func basicTest() (bool, int, int) {
 
 	/* All nodes quit. */
 	for i := 0; i <= basicTestNodeSize; i++ {
-		nodes[i].Quit()
+		//nodes[i].Quit()
+		nodes[i].ForceQuit()
 	}
 
 	return panicked, basicFailedCnt, basicTotalCnt
